@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>바나나</title>
+    </head>
+    <body>
+
+        <img id="followMouse" src="banana.png">
+        <script>
+            let image = document.getElementById("followMouse");
+            document.onmousemove = updateImage;
+
+            function updateImage(event) {
+                const X = event.clientX;
+                const Y = event.clientY;
+                image.style.transform = `translate(${X}px, ${Y}px)`;
+            }
+        </script>
+    </body>
+</html>
