@@ -6,4 +6,6 @@ function Person (name, age) {
     }
 };
 let person1 = new Person("함승빈", 24)
-person1.intro();s
+let person2 = new Person("김주령", 25)
+person1.intro();
+person2.intro();
